@@ -1,0 +1,119 @@
+import './style.css'
+
+interface Project {
+    title: string
+    description: string
+    technologies: string[]
+    linkGithub: string
+    linkDeploy: string
+    image: string
+}
+
+const myProjects: Project[] = [
+    {
+        title: "Tasks App",
+        description: "Workflow organizer focused on strict typing for data safety and responsive design.",
+        technologies: ["React",
+            "TypeScript", "Tailwind"],
+        linkGithub: "https://github.com/rebecafloriano/tasks-app",
+        linkDeploy: "https://github.com/rebecafloriano/tasks-app#:~:text=tasks%2Dapp%2Dblue.vercel.app",
+        image: new URL("./assets/tasks-desktop.png", import.meta.url).href
+    },
+    {
+        title: "Collab Clinic",
+        description: "Online booking system for desktop",
+        technologies: ["React", "TypeScript", "Tailwind", "Firebase"],
+        linkGithub: "https://github.com/rebecafloriano/appointments",
+        linkDeploy: "https://github.com/rebecafloriano/appointments#:~:text=About-,appointments%2Dfive%2Dflame.vercel.app,-Resources",
+        image: new URL("./assets/screen.png", import.meta.url).href
+    },
+    {
+        title: "Interactive ToDo List",
+        description: "Interactive list management with a focus on state and lifecycle management.",
+        technologies: ["React", "CSS3", "JavaScript"],
+        linkGithub: "https://github.com/rebecafloriano/toDo-react",
+        linkDeploy: "https://rebecafloriano.github.io/toDo-react/",
+        image: new URL("./assets/tela-toDo-react.png", import.meta.url).href
+    },
+    {
+        title: "Newsletter Subscription Form",
+        description: "A professional, accessible, and responsive newsletter subscription form",
+        technologies: ["React", "Tailwind", "TypeScript"],
+        linkGithub: "https://github.com/rebecafloriano/form-newsletter/tree/main",
+        linkDeploy: "https://rebecafloriano.github.io/form-newsletter/",
+        image: new URL("./assets/screenshot - cópia.png", import.meta.url).href
+    },
+    {
+        title: "Simple Card Sync",
+        description: "A professional, dynamic, and responsive digital business card generator.",
+        technologies: ["React", "TypeScript", "Tailwind"],
+        linkGithub: "https://github.com/rebecafloriano/simple-card-sync",
+        linkDeploy: "https://rebecafloriano.github.io/simple-card-sync/",
+        image: new URL("./assets/tela-cartao.png", import.meta.url).href
+    },
+    {
+        title: "Mosquito Killer Game",
+        description: "Interactive desktop application built to consolidate pure logic and dynamic DOM manipulation.",
+        technologies: ["HTML", "CSS3", "JavaScript"],
+        linkGithub: "https://github.com/rebecafloriano/jogo_mata_mosquitos",
+        linkDeploy: "https://rebecafloriano.github.io/jogo_mata_mosquitos/",
+        image: new URL("./assets/mosquito1.png", import.meta.url).href
+    },
+
+]
+
+
+
+declare const lucide: { createIcons: () => void };
+
+function renderizarProjetos(): void {
+    const container = document.getElementById("projects-container") as HTMLDivElement | null;
+    if (!container) return;
+
+    container.innerHTML = myProjects.map((project: Project): string => {
+        // Gera as badges de tecnologia dinamicamente
+        const tagsHTML = project.technologies
+            .map((tech: string) => {
+                let icone = "code-2";
+                if (tech.toLowerCase() === "typescript") icone = "file-type-2";
+                if (tech.toLowerCase() === "javascript") icone = "braces";
+                if (tech.toLowerCase() === "react") return `<span class="flex items-center gap-2 bg-emerald-400/5 text-cyan-50 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono"><i data-lucide="atom" class="w-4 h-4 shrink-0 animate-[spin_20s_linear_infinite]"></i>React</span>`;
+                if (tech.toLowerCase() === "tailwind") icone = "wind";
+                if (tech.toLowerCase() === "css3") icone = "palette";
+
+                return `<span class="flex items-center gap-2 bg-emerald-400/5 text-cyan-50 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono">
+                  <i data-lucide="${icone}" class="w-4 h-4 shrink-0"></i>
+                  ${tech}
+                </span>`;
+            }).join("");
+
+
+        return `
+       <div class="text-white bg-[#4253a6d8] p-4 rounded-2xl flex flex-col gap-3 border border-emerald-300 w-full">
+            <div class="w-full h-48 overflow-hidden rounded-lg mb-3">
+                <img class="w-full h-full object-cover object-top" src="${project.image}" alt="${project.title} preview">
+            </div>
+              <div>
+                <h3 class="text-emerald-300 font-bold text-lg md:text-xl">${project.title}</h3>
+              <p class="text-cyan-50 text-sm md:text-md font-extralight line-clamp-2 min-h-10 mb-4">
+                 ${project.description}
+                </p>
+              </div>
+
+              <div class="flex flex-wrap justify-center md:flex-row gap-2">
+              ${tagsHTML}
+            </div>
+              <div class="flex justify-between pt-3">
+                <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="${project.linkGithub}">View code</a>
+                <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="${project.linkDeploy}">Visit Site</a>
+              </div>
+            </div>
+    `;
+    }).join("");
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", renderizarProjetos);

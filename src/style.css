@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    /* Define a cor de fundo padrão (azul-escuro profundo da imagem) */
+    background-color: #060b24;
+    /* Deixa o scrolling da página suave quando clicares nos links do menu */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* Usa a fonte padrão do sistema, mas com suavização de píxeis premium */
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-cyber {
+  font-family: 'Orbitron', sans-serif;
+}
+}

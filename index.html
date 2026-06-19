@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body class="p-4 md:p-8 text-cyan-50">
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md pt-3 pb-3"
+    >
+      <nav class="md:flex pt-3 justify-around border-b border-emerald-300/30">
+        <a
+          href="#home"
+          class="justify-center flex items-center gap-2 hover:text-emerald-300 transition-colors"
+        >
+          <span class="font-bold font-cyber text-white text-2xl md:text-3xl"
+            >&lt;/&gt;</span
+          >
+          <span
+            class="font-cyber text-emerald-300 text-2xl md:text-3xl tracking-wider font-bold"
+          >
+            REBECA ERDMAN
+          </span>
+        </a>
+        <ul
+          class="flex justify-center gap-8 pt-2 text-md md:text-lg pb-2 items-center md:flex-row md:justify-around md:pb-3"
+        >
+          <li>
+            <a class="hover:text-emerald-300 transition-colors" href="#home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-emerald-300 transition-colors" href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-emerald-300 transition-colors"
+              href="#projects"
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-emerald-300 transition-colors" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="px-6 md:px-12 flex flex-col gap-12">
+      <section
+        id="home"
+        class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-12 min-h-[calc(100vh-80px)] md:min-h-screen pt-36 md:pt-24 pb-12"
+      >
+        <div
+          class="border border-emerald-300 w-56 h-56 md:w-96 md:h-96 rounded-full overflow-hidden md:order-last shrink-0 aspect-square"
+        >
+          <img
+            src="./src/assets/rebeca-500.png"
+            alt="Rebeca Erdman"
+            class="w-full h-full object-cover object-top"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left max-w-xl gap-6"
+        >
+          <div>
+            <h1
+              class="text-cyan-50 font-bold text-2xl md:text-3xl pb-3 leading-tight"
+            >
+              HI, I'M <span class="text-emerald-300">REBECA!</span> <br />
+              FRONT-END DEVELOPER
+            </h1>
+            <h2
+              class="text-slate-300 text-base md:text-lg leading-relaxed font-light"
+            >
+              I am a Front-End Developer focused on building modern, intuitive,
+              and fully responsive interfaces. I combine clean TypeScript code
+              with robust styling to transform complex ideas into fluid,
+              efficient, and high-performance digital experiences.
+            </h2>
+          </div>
+
+          <a
+            class="hover:text-emerald-400 hover:border-emerald-400 flex gap-2 text-emerald-300 border border-emerald-300 px-5 py-3 rounded-sm font-bold tracking-wider transition-colors"
+            href="./public/cv-english.pdf"
+            download="cv-english.pdf"
+          >
+            DOWNLOAD CV
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-5 h-5 animate-pulse"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-12 min-h-[calc(100vh-80px)] md:min-h-screen pt-36 md:pt-24 pb-12 border-t border-emerald-300/10"
+      >
+        <div
+          class="border border-emerald-300 w-56 h-56 md:w-80 md:h-80 rounded-4xl overflow-hidden shrink-0 aspect-square hidden md:block"
+        >
+          <img
+            src="./src/assets/650d715703204e7241295dea_html codes list.webp"
+            alt="Rebeca Erdman"
+            class="w-full h-full object-cover object-top"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left max-w-xl gap-6"
+        >
+          <div>
+            <h2
+              class="text-emerald-300 font-cyber font-bold text-2xl md:text-3xl pb-3 leading-tight"
+            >
+              ABOUT ME
+            </h2>
+            <p
+              class="text-slate-300 text-base md:text-lg leading-relaxed font-light"
+            >
+              I am a Front-End Developer driven by a passion for building
+              flawless, responsive interfaces. Specialized in TypeScript, React,
+              and Tailwind CSS, I focus on writing clean code and structuring
+              efficient solutions. Currently, I am looking to join a technical
+              team to contribute to real-world projects and launch my
+              professional career.
+            </p>
+          </div>
+
+          <div class="w-full">
+            <div class="flex flex-wrap justify-center md:justify-start gap-3">
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="braces" class="w-4 h-4 shrink-0"></i>
+                JavaScript
+              </span>
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="file-type-2" class="w-4 h-4 shrink-0"></i>
+                TypeScript
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="palette" class="w-4 h-4 shrink-0"></i>
+                CSS3
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="code-2" class="w-4 h-4 shrink-0"></i>
+                HTML5
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i
+                  data-lucide="atom"
+                  class="w-4 h-4 shrink-0 animate-[spin_20s_linear_infinite]"
+                ></i>
+                React
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="wind" class="w-4 h-4 shrink-0"></i>
+                Tailwind
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="flame" class="w-4 h-4 shrink-0"></i>
+                Firebase
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="git-branch" class="w-4 h-4 shrink-0"></i>
+                GitHub
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-12 min-h-[calc(100vh-80px)] md:min-h-screen pt-32 md:pt-24 pb-12 border-t border-emerald-300/10"
+      >
+        <div class="flex flex-col gap-4 text-center">
+          <div>
+            <h2
+              class="text-emerald-300 font-cyber font-bold text-2xl md:text-3xl leading-tight md:pb-10"
+            >
+              MY PROJECTS
+            </h2>
+          </div>
+
+          <div
+            id="projects-container"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-5"
+          >
+            <!--
+            <div class="text-white bg-[#4253a6d8] p-4 rounded-2xl flex flex-col gap-3 border border-emerald-300 w-full">
+              <img class="rounded-lg" src="./src/assets/tasks-desktop.png" alt="image">
+              <div>
+                <h3 class="text-emerald-300 font-bold text-lg md:text-xl">Tasks App</h3>
+              <p class="text-cyan-50 text-sm md:text-md font-extralight">Workflow organizer focused on strict typing for data safety and responsive design.</p>
+              </div>
+              
+              <div class="flex flex-wrap justify-center md:flex-row gap-2">
+              
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-cyan-50 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="file-type-2" class="w-4 h-4 shrink-0"></i>
+                TypeScript
+              </span>
+
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-cyan-50 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i
+                  data-lucide="atom"
+                  class="w-4 h-4 shrink-0 animate-[spin_20s_linear_infinite]"
+                ></i>
+                React
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-cyan-50 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="wind" class="w-4 h-4 shrink-0"></i>
+                Tailwind
+              </span>
+
+            </div>
+              <div class="flex justify-between pt-3">
+                <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="">View code</a>
+                <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="">Visit Site</a>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="max-w-5xl mx-auto min-h-[40vh] pt-17 md:pt-24 pb-12 border-t border-emerald-300/10"
+      >
+        <div class="text-center mb-10">
+          <h2
+            class="text-emerald-300 font-cyber font-bold text-2xl md:text-3xl leading-tight"
+          >
+            CONTACT
+          </h2>
+          <p
+            class="text-slate-300 text-sm md:text-base font-light mt-3 max-w-xl leading-relaxed"
+          >
+            I'm currently open to new opportunities and collaborations. If you
+            have a question, a project idea, or just want to connect, feel free
+            to reach out!
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="mailto:rebeca.floriano@outlook.com"
+            class="flex items-center gap-3 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 hover:border-emerald-400/50 hover:bg-emerald-400/2 px-4 py-2.5 rounded-sm text-sm font-mono transition-all duration-300 group"
+          >
+            <i
+              data-lucide="mail"
+              class="w-4 h-4 shrink-0 text-emerald-400 group-hover:scale-110 transition-transform"
+            ></i>
+            rebecaoliver09@gmail.com
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/rebeca-erdman-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-3 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 hover:border-emerald-400/50 hover:bg-emerald-400/2 px-4 py-2.5 rounded-sm text-sm font-mono transition-all duration-300 group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-4 h-4 shrink-0 text-emerald-400 group-hover:scale-110 transition-transform"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/rebecafloriano"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-3 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 hover:border-emerald-400/50 hover:bg-emerald-400/2 px-4 py-2.5 rounded-sm text-sm font-mono transition-all duration-300 group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-4 h-4 shrink-0 text-emerald-400 group-hover:scale-110 transition-transform"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+            GitHub
+          </a>
+
+          <span
+            class="flex items-center gap-3 bg-slate-950/40 text-slate-300 border border-emerald-100 px-4 py-2.5 rounded-sm text-sm font-mono"
+          >
+            <i
+              data-lucide="map-pin"
+              class="w-4 h-4 shrink-0 text-emerald-400/70"
+            ></i>
+            Lisbon, Portugal
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-full border-t border-emerald-300/10 bg-slate-950/40 py-6 mt-12 text-center"
+    >
+      <div
+        class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400"
+      >
+        <div>
+          <p>&copy; 2026 Rebeca Erdman. All rights reserved.</p>
+        </div>
+
+        <div class="flex items-center gap-1.5">
+          <span>Built with</span>
+          <span class="text-emerald-400 font-bold font-cyber tracking-wider"
+            >TypeScript</span
+          >
+          <span>&amp;</span>
+          <span class="text-emerald-400 font-bold font-cyber tracking-wider"
+            >Tailwind</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/main.ts"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -16,7 +16,7 @@ const myProjects: Project[] = [
         technologies: ["React",
             "TypeScript", "Tailwind"],
         linkGithub: "https://github.com/rebecafloriano/tasks-app",
-        linkDeploy: "https://github.com/rebecafloriano/tasks-app#:~:text=tasks%2Dapp%2Dblue.vercel.app",
+        linkDeploy: "https://tasks-app-blue.vercel.app",
         image: new URL("./assets/tasks-desktop.png", import.meta.url).href
     },
     {
@@ -24,7 +24,7 @@ const myProjects: Project[] = [
         description: "Online booking system for desktop",
         technologies: ["React", "TypeScript", "Tailwind", "Firebase"],
         linkGithub: "https://github.com/rebecafloriano/appointments",
-        linkDeploy: "https://github.com/rebecafloriano/appointments#:~:text=About-,appointments%2Dfive%2Dflame.vercel.app,-Resources",
+        linkDeploy: "https://appointments-five-flame.vercel.app/",
         image: new URL("./assets/screen.png", import.meta.url).href
     },
     {

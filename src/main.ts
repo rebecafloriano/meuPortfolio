@@ -89,25 +89,33 @@ function renderizarProjetos(): void {
 
 
         return `
-       <div class="text-white bg-[#4253a6d8] p-4 rounded-2xl flex flex-col gap-3 border border-emerald-300 w-full">
-            <div class="w-full h-48 overflow-hidden rounded-lg mb-3">
-                <img class="w-full h-full object-cover object-top" src="${project.image}" alt="${project.title} preview">
-            </div>
-              <div>
-                <h3 class="text-emerald-300 font-bold text-lg md:text-xl">${project.title}</h3>
-              <p class="text-cyan-50 text-sm md:text-md font-extralight line-clamp-2 min-h-10 mb-4">
-                 ${project.description}
-                </p>
-              </div>
+       <div class="text-white bg-[#4253a6d8] p-4 rounded-2xl flex flex-col justify-between h-full border border-emerald-300 w-full">
 
-              <div class="flex flex-wrap justify-center md:flex-row gap-2">
-              ${tagsHTML}
-            </div>
-              <div class="flex justify-between pt-3">
-                <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="${project.linkGithub}">View code</a>
-                <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="${project.linkDeploy}">Visit Site</a>
-              </div>
-            </div>
+  <!-- BLOCO DO TOPO: Agrupa tudo o que deve ficar alinhado de cima para baixo -->
+  <div class="flex flex-col gap-1">
+    <div class="w-full h-48 overflow-hidden rounded-lg mb-3">
+      <img class="w-full h-full object-cover object-top" src="${project.image}" alt="${project.title} preview">
+    </div>
+    
+    <div>
+      <h3 class="text-emerald-300 font-bold text-lg md:text-xl">${project.title}</h3>
+      <p class="text-cyan-50 text-sm md:text-md font-extralight mb-4">
+        ${project.description}
+      </p>
+    </div>
+
+    <div class="flex flex-wrap justify-center md:flex-row gap-2 mb-4">
+      ${tagsHTML}
+    </div>
+  </div>
+
+  <!-- BLOCO DO FUNDO: Fica sempre fixo na base do cartão -->
+  <div class="flex justify-between pt-3 border-t border-slate-200/10">
+    <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="${project.linkGithub}">View code</a>
+    <a class="border border-emerald-300 rounded-sm px-2 py-1 text-sm text-emerald-300 font-semibold animate-pulse" target="_blank" href="${project.linkDeploy}">Visit Site</a>
+  </div>
+
+</div>
     `;
     }).join("");
 

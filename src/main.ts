@@ -12,7 +12,7 @@ interface Project {
 const myProjects: Project[] = [
     {
         title: "Tasks App",
-        description: "Workflow organizer focused on strict typing for data safety and responsive design.",
+        description: "The project was designed to improve organization and productivity, allowing users to create, filter, and track task progress efficiently.",
         technologies: ["React",
             "TypeScript", "Tailwind"],
         linkGithub: "https://github.com/rebecafloriano/tasks-app",
@@ -21,19 +21,19 @@ const myProjects: Project[] = [
     },
     {
         title: "Collab Clinic",
-        description: "Online booking system for desktop",
+        description: "Clinica Collab (Appointments Engine) is a data-driven, real-time medical workspace engineered to centralize, track, and streamline clinical scheduling pipelines. Powered by active cloud streams and strict operational validations, the engine completely replaces legacy static calendars with an optimized, real-time grid designed for maximum daily throughput.",
         technologies: ["React", "TypeScript", "Tailwind", "Firebase"],
         linkGithub: "https://github.com/rebecafloriano/appointments",
         linkDeploy: "https://appointments-five-flame.vercel.app/",
         image: new URL("./assets/screen.png", import.meta.url).href
     },
     {
-        title: "Interactive ToDo List",
-        description: "Interactive list management with a focus on state and lifecycle management.",
-        technologies: ["React", "CSS3", "JavaScript"],
-        linkGithub: "https://github.com/rebecafloriano/toDo-react",
-        linkDeploy: "https://rebecafloriano.github.io/toDo-react/",
-        image: new URL("./assets/tela-toDo-react.png", import.meta.url).href
+        title: "Employee Management",
+        description: "The application allows you to perform all CRUD operations (Create, Read, Update, and Delete) by consuming a real API in the cloud.",
+        technologies: ["React", "Tailwind", "TypeScript"],
+        linkGithub: "https://github.com/rebecafloriano/user-directory",
+        linkDeploy: "https://rebecafloriano.github.io/user-directory/",
+        image: new URL("./assets/user-directory-lg - cópia.png", import.meta.url).href
     },
     {
         title: "Newsletter Subscription Form",
@@ -45,7 +45,7 @@ const myProjects: Project[] = [
     },
     {
         title: "Simple Card Sync",
-        description: "A professional, dynamic, and responsive digital business card generator.",
+        description: "A professional, dynamic, and responsive digital business card generator. This project allows users to create, customize, and instantly export their business cards with a real-time preview.",
         technologies: ["React", "TypeScript", "Tailwind"],
         linkGithub: "https://github.com/rebecafloriano/simple-card-sync",
         linkDeploy: "https://rebecafloriano.github.io/simple-card-sync/",

@@ -163,17 +163,15 @@
 
           
             <ul
-              class="space-y-3 text-slate-300 text-sm md:text-base font-light"
+              class="space-y-3 text-slate-300 text-sm md:text-base font-light mb-6"
             >
               <li class="flex items-start gap-2">
                 <span class="text-emerald-400 mt-1 select-none">•</span>
                 <span>
                   <strong class="text-cyan-50 font-semibold"
-                    >Resilient Architecture:</strong
+                    >Multi-Layered Automated Testing:</strong
                   >
-                  Leveraging strict static typing and automated testing to
-                  eliminate runtime exceptions and guarantee application
-                  stability.
+                  Implementing resilient testing strategies combining <strong class="text-emerald-300 font-normal">Vitest</strong> and <strong class="text-emerald-300 font-normal">React Testing Library</strong> for unit/integration logic, alongside <strong class="text-emerald-300 font-normal">Playwright</strong> for robust End-to-End (E2E) testing across multiple browser engines (Chromium, Firefox, WebKit). Expert in network mocking, API boundary testing, and visual consistency.
                 </span>
               </li>
 
@@ -181,10 +179,9 @@
                 <span class="text-emerald-400 mt-1 select-none">•</span>
                 <span>
                   <strong class="text-cyan-50 font-semibold"
-                    >Native Accessibility:</strong
+                    >Native Accessibility & UX:</strong
                   >
-                  Crafting interfaces fully compliant with WCAG guidelines,
-                  ensuring digital inclusion and regulatory compliance.
+                  Crafting interfaces fully compliant with WCAG guidelines (AA level), ensuring digital inclusion with a flawless 0-issues score in <strong class="text-emerald-300 font-normal">axe DevTools</strong>, semantic HTML landmarks, and tight user feedback loops.
                 </span>
               </li>
 
@@ -192,10 +189,9 @@
                 <span class="text-emerald-400 mt-1 select-none">•</span>
                 <span>
                   <strong class="text-cyan-50 font-semibold"
-                    >Workflow Automation:</strong
+                    >Workflow Automation & CI/CD:</strong
                   >
-                  Designing automated CI/CD pipelines via GitHub Actions to
-                  streamline linting, testing, and production deployments.
+                  Designing strict, automated deployment pipelines via <strong class="text-emerald-300 font-normal">GitHub Actions</strong> that enforce code quality gatekeeping (Prettier, ESLint zero-warning policy, and automated test runners) before deploying safe builds to production.
                 </span>
               </li>
             </ul>
@@ -245,6 +241,26 @@
               >
                 <i data-lucide="wind" class="w-4 h-4 shrink-0"></i>
                 Tailwind
+              </span>
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="shield-check" class="w-4 h-4 shrink-0"></i>
+                Vitest
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="check-square" class="w-4 h-4 shrink-0"></i>
+                Playwright
+              </span>
+
+              <span
+                class="flex items-center gap-2 bg-emerald-400/5 text-emerald-300 border border-emerald-400/20 px-3 py-1.5 rounded-sm text-sm font-mono transition-colors"
+              >
+                <i data-lucide="git-fork" class="w-4 h-4 shrink-0"></i>
+                CI/CD (Actions)
               </span>
 
               <span
@@ -330,7 +346,7 @@
 
       <section
         id="contact"
-        class="max-w-5xl mx-auto min-h-[40vh] pt-17 md:pt-24 pb-12 border-t border-emerald-300/10"
+        class="max-w-5xl flex flex-col items-center mx-auto min-h-[40vh] pt-17 md:pt-24 pb-12 border-t border-emerald-300/10"
       >
         <div class="text-center mb-10">
           <h2
@@ -339,7 +355,7 @@
             CONTACT
           </h2>
           <p
-            class="text-slate-300 text-sm md:text-base font-light mt-3 max-w-xl leading-relaxed"
+            class="text-slate-300 text-center text-sm md:text-base font-light mt-3 max-w-xl leading-relaxed"
           >
             I'm currently open to new opportunities and collaborations. If you
             have a question, a project idea, or just want to connect, feel free

@@ -1,4 +1,8 @@
-import './style.css'
+import { inject } from '@vercel/analytics';
+import './style.css'; 
+
+// Inicializa o pixel de analytics da Vercel
+inject();
 
 interface Project {
     title: string
@@ -37,7 +41,7 @@ const myProjects: Project[] = [
     },
     {
         title: "Newsletter Subscription Form",
-        description: "A professional, accessible, and responsive newsletter subscription form",
+        description: "A professional, WCAG-compliant newsletter subscription form built with React 19 and TypeScript. Enforces an airtight CI/CD pipeline via GitHub Actions, combining Vitest unit/integration suites and concurrent multi-browser E2E testing using Playwright.",
         technologies: ["React", "Tailwind", "TypeScript"],
         linkGithub: "https://github.com/rebecafloriano/form-newsletter/tree/main",
         linkDeploy: "https://rebecafloriano.github.io/form-newsletter/",

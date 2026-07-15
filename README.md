@@ -1,48 +1,48 @@
-# 💻 Meu Portfólio
+# 💻 My Portfolio
 
-Portfólio pessoal desenvolvido para apresentar minha trajetória, habilidades e projetos como Engenheira de Software.
+Personal portfolio built to showcase my background, skills, and projects as a Software Engineer.
 
 🔗 Live Demo
 
-O projeto está no ar e pode ser acessado aqui:
+The project is live and can be accessed here:
 👉 [meu-portfolio-azure-six.vercel.app](https://meu-portfolio-azure-six.vercel.app)
 
-🛠️ Tecnologias Utilizadas
+🛠️ Technologies Used
 
 - TypeScript
 - Vite
 - Tailwind CSS
-- Vercel Analytics (métricas de acesso)
-- Deploy contínuo via Vercel
+- Vercel Analytics (usage metrics)
+- Continuous deployment via Vercel
 
-🚀 Rodando o Projeto Localmente
+🚀 Running the Project Locally
 
-Clone o repositório:
+Clone the repository:
 ```
 git clone https://github.com/rebecafloriano/meuPortfolio.git
 ```
 
-Acesse a pasta do projeto:
+Navigate to the project folder:
 ```
 cd meuPortfolio
 ```
 
-Instale as dependências:
+Install dependencies:
 ```
 npm install
 ```
 
-Inicie o servidor de desenvolvimento:
+Start the development server:
 ```
 npm run dev
 ```
 
-Gere a build de produção:
+Build for production:
 ```
 npm run build
 ```
 
-📂 Estrutura do Projeto
+📂 Project Structure
 
 ```
 meuPortfolio/
@@ -56,8 +56,8 @@ meuPortfolio/
 └── tailwind.config.js
 ```
 
-💜 Autora
+💜 Author
 
-Desenvolvido por Rebeca Erdman
+Developed by Rebeca Erdman
 
 GitHub: @rebecafloriano

@@ -5,7 +5,7 @@ Portfólio pessoal desenvolvido para apresentar minha trajetória, habilidades e
 🔗 Live Demo
 
 O projeto está no ar e pode ser acessado aqui:
-👉 meu-portfolio-azure-six.vercel.app
+👉 [meu-portfolio-azure-six.vercel.app](https://meu-portfolio-azure-six.vercel.app)
 
 🛠️ Tecnologias Utilizadas
 
